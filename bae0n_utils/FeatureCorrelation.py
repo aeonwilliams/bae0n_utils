@@ -27,7 +27,7 @@ def CorrMatrixAnalysis(df, dep_feature):
     dep_t = dep.drop(dep_feature).abs().sort_values(ascending=False).dropna()
     corrs.append(['High', dep_t.loc[dep_t >= 0.7]])
     corrs.append(['Moderate', dep_t.loc[(dep_t >= 0.5) & (dep_t < 0.7)]])
-    corrs.append(['Low', dep_t.loc[(dep >= 0.3) & (dep_t < 0.5)]])
+    corrs.append(['Low', dep_t.loc[(dep_t >= 0.3) & (dep_t < 0.5)]])
     corrs.append(['No', dep_t.loc[dep_t < 0.3]])
     for corr_ in corrs:
         if corr_[1].size > 0:
