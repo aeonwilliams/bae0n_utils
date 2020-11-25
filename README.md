@@ -7,8 +7,11 @@ Collection of utility functions to be used in Python.
 Fits Jupyter cells to window size.
 
 ### ActivateCellDoneSound
-#### ex: ActivateCellDoneSound()
-Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.    
+#### ex: ActivateCellDoneSound(url='https://bigsoundbank.com/UPLOAD/mp3/0116.mp3')
+Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.
+
+params:
+- url (optional) - url of the sound you want to play. Accepts .wav and .mp3
 
 ### ActivateCellFailSound
 #### ex: ActivateCellFailSound()
@@ -75,3 +78,5 @@ CorrMatrixAnalysis(df, 'species')
      0.01  - texture_se
      0.01  - symmetry_se
 </details>
+
+Many thanks to my muse for the constant inspiration, great ideas, and support <3

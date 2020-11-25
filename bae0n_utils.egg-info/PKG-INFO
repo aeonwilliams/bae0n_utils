@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: bae0n-utils
-Version: 0.0.20
+Version: 0.0.21
 Summary: Utility functions to be used in Python
 Home-page: https://github.com/aeonwilliams/bae0n_utils/blob/main/README.md
 Author: Aeon Williams
@@ -15,8 +15,11 @@ Description: # bae0n_utils
         Fits Jupyter cells to window size.
         
         ### ActivateCellDoneSound
-        #### ex: ActivateCellDoneSound()
-        Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.    
+        #### ex: ActivateCellDoneSound(url='https://bigsoundbank.com/UPLOAD/mp3/0116.mp3')
+        Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.
+        
+        params:
+        - url (optional) - url of the sound you want to play. Accepts .wav and .mp3
         
         ### ActivateCellFailSound
         #### ex: ActivateCellFailSound()
@@ -83,6 +86,8 @@ Description: # bae0n_utils
              0.01  - texture_se
              0.01  - symmetry_se
         </details>
+        
+        Many thanks to my muse for the constant inspiration, great ideas, and support <3
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
