@@ -2,6 +2,18 @@
 
 Collection of utility functions to be used in Python. 
 
+### FitCellsToWindow
+#### ex: FitCellsToWindow()
+Fits Jupyter cells to window size.
+
+### ActivateCellDoneSound
+#### ex: ActivateCellDoneSound()
+Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.    
+
+### ActivateCellFailSound
+#### ex: ActivateCellFailSound()
+Plays a sound effect if the cell execution fails.
+
 ### ClearDir
 #### ex: ClearDir('./images')
 Removes all files from a directory.

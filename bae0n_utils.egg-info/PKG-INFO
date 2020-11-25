@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: bae0n-utils
-Version: 0.0.12
+Version: 0.0.20
 Summary: Utility functions to be used in Python
 Home-page: https://github.com/aeonwilliams/bae0n_utils/blob/main/README.md
 Author: Aeon Williams
@@ -9,6 +9,18 @@ License: UNKNOWN
 Description: # bae0n_utils
         
         Collection of utility functions to be used in Python. 
+        
+        ### FitCellsToWindow
+        #### ex: FitCellsToWindow()
+        Fits Jupyter cells to window size.
+        
+        ### ActivateCellDoneSound
+        #### ex: ActivateCellDoneSound()
+        Plays a sound effect when a cell is complete. Currently kind of buggy with a failed cell.    
+        
+        ### ActivateCellFailSound
+        #### ex: ActivateCellFailSound()
+        Plays a sound effect if the cell execution fails.
         
         ### ClearDir
         #### ex: ClearDir('./images')
