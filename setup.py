@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bae0n-utils",
-    version="0.0.21",
+    version="0.0.26",
     author="Aeon Williams",
     author_email="aeonwilliams@gmail.com",
     description="Utility functions to be used in Python",

@@ -1,16 +1,5 @@
 import pandas as pd
 
-###################################################################################################
-# brief:
-    # Displays in depth analysis of the correlation between features. Currently only addresses
-    # correlation of dependent feature to independent features, but will be updated soon.
-# params (see default values for examples):
-    # df          - The dataframe to analyze.
-    # dep_feature - The dependent feature.
-# example call:
-    # df = pd.read_csv('Iris.csv')
-    # CorrMatrixAnalysis(df, 'species')
-###################################################################################################
 def CorrMatrixAnalysis(df, dep_feature):
     '''brief:
             Displays in depth analysis of the correlation between features. Currently only addresses
