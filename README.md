@@ -22,7 +22,9 @@ Plays a sound effect if the cell execution fails.
 Removes all files from a directory.
     
 params:
-- path - The source directory of the images to turn into a gif. Must include preceding ./, should not include ending /
+- path     - The source directory of the images to turn into a gif. Must include preceding ./, should not include ending /
+- safe_del - Prompts user input for confirmation if set to True.
+             Default Value: True
 
 ### MakeGif
 #### ex: MakeGif('./data', './', 'test', 100, 'jpg')

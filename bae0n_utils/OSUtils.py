@@ -3,7 +3,7 @@ import glob
 import os
 from pathlib import Path
 
-def ClearDir(path='./'):
+def ClearDir(path='./', safe_del=True):
     '''brief:
             Removes all files from a directory.
         params (see default values for examples):
@@ -11,8 +11,11 @@ def ClearDir(path='./'):
                    Must include preceding ./, should not include ending /
         example call:
             ClearDir('./kmeans/images')'''
-    print("Delete files from " + path + " y/n?")
-    if(input() == 'y'):
+    choice=''
+    if(safe_del):
+        print("Delete files from " + path + " y/n?")
+        choice = input()
+    if(safe_del == False or str(choice) == 'y'):
         files = glob.glob(path + '/*')
         for f in files:
             os.remove(f)
