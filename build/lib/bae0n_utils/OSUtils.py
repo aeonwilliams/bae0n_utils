@@ -80,5 +80,8 @@ def ColoredText(r, g, b, text):
     
     Returns:
       Modified text string, now with the given color.
+
+    Example Call:
+      print(ColoredText(255, 0, 0, 'Hello World'))
     """
     return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)

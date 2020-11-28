@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: bae0n-utils
-Version: 0.0.28-9
+Version: 0.0.29
 Summary: Utility functions to be used in Python
 Home-page: https://github.com/aeonwilliams/bae0n_utils/blob/main/README.md
 Author: Aeon Williams
@@ -9,6 +9,19 @@ License: UNKNOWN
 Description: # bae0n_utils
         
         Collection of utility functions to be used in Python. 
+        
+        ### ColoredText(r, g, b, text)
+        #### ex: print(ColoredText(255, 0, 0, 'Hello World'))
+        Displays colored text in the console.
+            
+        params:
+        - r    - Value from 0-255 for Red
+        - g    - Value from 0-255 for Green
+        - b    - Value from 0-255 for Blue
+        - text - Text to display with color
+            
+        Returns:
+          Modified text string, now with the given color.      
         
         ### FitCellsToWindow
         #### ex: FitCellsToWindow()

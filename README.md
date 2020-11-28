@@ -2,6 +2,19 @@
 
 Collection of utility functions to be used in Python. 
 
+### ColoredText(r, g, b, text)
+#### ex: print(ColoredText(255, 0, 0, 'Hello World'))
+Displays colored text in the console.
+    
+params:
+- r    - Value from 0-255 for Red
+- g    - Value from 0-255 for Green
+- b    - Value from 0-255 for Blue
+- text - Text to display with color
+    
+Returns:
+  Modified text string, now with the given color.      
+
 ### FitCellsToWindow
 #### ex: FitCellsToWindow()
 Fits Jupyter cells to window size.
