@@ -60,8 +60,25 @@ def ActivateCellDoneSound(url='http://soundfxcenter.com/movies/star-wars/8d82b5_
 #-------------------------------------------------------------------------------------
 from IPython.core.display import display, HTML
 def FitCellsToWindow():
-  '''brief:
-          Fits Jupyter cells to window size.
-        example call:
-            FitCellsToWindow()'''
+  '''
+  Fits Jupyter cells to window size.
+
+  Example Call:
+      FitCellsToWindow()'''
   display(HTML("<style>.container { width:100% !important; }</style>"))
+
+#-------------------------------------------------------------------------------------
+def ColoredText(r, g, b, text):
+    """
+    Displays colored text in the console.
+    
+    Parameters:
+        r    - Value from 0-255 for Red
+        g    - Value from 0-255 for Green
+        b    - Value from 0-255 for Blue
+        text - Text to display with color
+    
+    Returns:
+      Modified text string, now with the given color.
+    """
+    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)
